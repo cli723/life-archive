@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#e9eceb" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Life Archive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="site-shell">
+    <header class="hero" id="top">
+      <div class="topline">
+        <span>PRIVATE ACCESS POINT</span>
+        <span>LIFE ARCHIVE · V6</span>
+      </div>
+
+      <div class="hero-main">
+        <div class="brand-block">
+          <img class="brand-mark" src="brand-mark.png" alt="Life Archive Brand Mark" />
+        </div>
+
+        <div class="identity-block">
+          <p class="archive-title">LIFE ARCHIVE</p>
+
+          <div class="name-stack">
+            <span class="field-label">LEGAL NAME</span>
+            <h1>Yuxuan Li</h1>
+
+            <span class="field-label preferred">PREFERRED NAME</span>
+            <div class="preferred-name">Christina</div>
+          </div>
+
+          <div class="hero-message">
+            <p class="intro intro-en">
+              If you are reading this, it probably means something unexpected has happened to me.
+              Thank you for taking a moment to help.
+            </p>
+            <p class="intro intro-cn" lang="zh-Hans">
+              如果你正在阅读这里，说明我可能遇到了一些突发情况。感谢你愿意停下来帮助我。
+            </p>
+          </div>
+
+          <a class="access-link" href="#emergency">
+            <span>Emergency Access</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="hero-nav" aria-label="Life Archive sections">
+        <a href="#emergency"><small>01</small><span>Emergency</span></a>
+        <a href="#medical"><small>02</small><span>Medical</span></a>
+        <a href="#identity"><small>03</small><span>Identity</span></a>
+        <a href="#documents"><small>04</small><span>Documents</span></a>
+        <a href="#wishes"><small>05</small><span>Personal Wishes</span></a>
+      </nav>
+    </header>
+
+    <section class="archive-section" id="emergency">
+      <header class="section-heading">
+        <span>01</span>
+        <div>
+          <p>EMERGENCY</p>
+          <h2>Call first.</h2>
+        </div>
+      </header>
+      <div id="contacts" class="data-list"></div>
+    </section>
+
+    <section class="archive-section" id="medical">
+      <header class="section-heading">
+        <span>02</span>
+        <div>
+          <p>MEDICAL</p>
+          <h2>Essential medical information.</h2>
+        </div>
+      </header>
+      <div id="medicalRows" class="data-list"></div>
+    </section>
+
+    <section class="archive-section" id="identity">
+      <header class="section-heading">
+        <span>03</span>
+        <div>
+          <p>IDENTITY</p>
+          <h2>Identity details.</h2>
+        </div>
+      </header>
+      <div id="identityRows" class="data-list"></div>
+    </section>
+
+    <section class="archive-section" id="documents">
+      <header class="section-heading">
+        <span>04</span>
+        <div>
+          <p>DOCUMENTS</p>
+          <h2>Important records.</h2>
+        </div>
+      </header>
+      <div id="documentRows" class="data-list"></div>
+    </section>
+
+    <section class="archive-section" id="wishes">
+      <header class="section-heading">
+        <span>05</span>
+        <div>
+          <p>PERSONAL WISHES</p>
+          <h2>What matters most.</h2>
+        </div>
+      </header>
+      <p id="wishesText" class="statement"></p>
+    </section>
+
+    <footer>
+      <span>LAST REVIEWED <strong id="reviewed"></strong></span>
+      <span>INFORMATION AID ONLY · NOT A LEGAL WILL</span>
+      <a href="#top">BACK TO TOP ↑</a>
+    </footer>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
