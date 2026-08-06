@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600&display=swap');
+:root{--bg:#0d0d0f;--panel:#17171a;--text:#f3f1eb;--muted:#9c9a94;--line:#303035;--accent:#b33a2f}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+body{margin:0;background:radial-gradient(circle at 85% 0%,#221b1b 0,transparent 32rem),var(--bg)}
+.shell{width:min(100%,760px);margin:auto;padding:28px 18px 56px}
+.hero{padding:28px 4px 34px;border-bottom:1px solid var(--line)}
+.eyebrow,.label,footer,.status{font:400 11px/1.4 "DM Mono",monospace;letter-spacing:.13em;color:var(--muted)}
+h1{font:600 clamp(58px,17vw,116px)/.78 Inter,sans-serif;letter-spacing:-.075em;margin:36px 0 30px}
+.intro{max-width:34rem;font-size:17px;line-height:1.55;color:#c9c7c0}
+.status{display:flex;gap:9px;align-items:center;margin-top:28px}.status span{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.card{background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);padding:22px;margin-top:14px;border-radius:2px}
+.card.urgent{border-left:3px solid var(--accent)}
+h2{font-size:28px;margin:18px 0 8px;letter-spacing:-.03em}
+.grid{display:grid;grid-template-columns:1fr;gap:0}
+.stack{display:grid;gap:12px;margin-top:18px}.compact{gap:9px}
+.row{display:flex;justify-content:space-between;gap:18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0;padding-bottom:0}.key{color:var(--muted);font-size:13px}.value{text-align:right;font-size:15px}
+a{color:var(--text);text-decoration:none;border-bottom:1px solid #666}
+.bodycopy{font-size:16px;line-height:1.65;color:#d8d6cf}
+footer{display:grid;gap:8px;padding:26px 4px 0;line-height:1.6}
+@media(min-width:620px){.shell{padding:46px 30px 70px}.grid{grid-template-columns:1fr 1fr;gap:14px}.grid .card{height:calc(100% - 14px)}}
